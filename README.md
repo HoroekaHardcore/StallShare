@@ -7,6 +7,7 @@
 ## CSS Framework
 
 Material UI & Styled Components
+Cards: -- https://react.semantic-ui.com/views/card/
 
 ## Testing Suite
 
