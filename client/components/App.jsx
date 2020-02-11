@@ -1,10 +1,10 @@
 import React from "react";
-import Home from './Home'
+import Album from "./Album";
 
 const App = () => {
   return (
 
-    <Home />
+    <Album />
   );
 };
 export default App;
