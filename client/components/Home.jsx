@@ -2,6 +2,9 @@ import React from "react";
 import Theme from "./Theme";
 import styled from "styled-components";
 
+/*
+The below is for reference on how to use styled components
+
 const Container = styled.div`
   width: 100%;
   border: ${props => `1px solid ${props.theme.colors.onyx}`};
@@ -14,6 +17,7 @@ const Heading = styled.h1`
     isHeading ? fontSizes.large : fontSizes.small};
   color: ${({ theme: { colors } }) => colors.persianGreen};
 `;
+*/
 
 const Home = () => {
   return (
