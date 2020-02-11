@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import LocationSelector from './LocationSelector'
 
 function Copyright() {
   return (
@@ -83,21 +84,18 @@ export default function Home() {
               Community Stall Share
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Something short and leading about the collection below—its contents, the creator, etc.
-              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-              entirely.
+              Copy about how this system works ie see what's available then go and collect or else drop off food and update.
+            </Typography>
+            <Typography variant="h6" align="center" color="textSecondary" paragraph>
+              Just select the community food stalls you wish to view from the dropdown list and the latest information from those locations will be shown.
             </Typography>
             <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center">
+              <Grid container spacing={1} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="primary">
+                  {/* <Button variant="contained" color="primary">
                     Main call to action
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Secondary action
-                  </Button>
+                  </Button> */}
+                  <LocationSelector variant= 'outlined' color='primary' />
                 </Grid>
               </Grid>
             </div>
