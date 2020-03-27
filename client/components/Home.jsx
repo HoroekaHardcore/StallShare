@@ -13,14 +13,14 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-import LocationSelector from './LocationSelector'
+import LocationDropDown from './LocationDropDown'
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Community Stall Share
+        What's on your local community stall?
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -80,22 +80,17 @@ export default function Home() {
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Community Stall Share
+            <Typography  variant="h3" align="center" color="textPrimary" gutterBottom>
+            What's on your local community stall?
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Copy about how this system works ie see what's available then go and collect or else drop off food and update.
+              View what's on a local stall and update the community when you give or take items.
             </Typography>
-            <Typography variant="h6" align="center" color="textSecondary" paragraph>
-              Just select the community food stalls you wish to view from the dropdown list and the latest information from those locations will be shown.
-            </Typography>
+            
             <div className={classes.heroButtons}>
               <Grid container spacing={1} justify="center">
                 <Grid item>
-                  {/* <Button variant="contained" color="primary">
-                    Main call to action
-                  </Button> */}
-                  <LocationSelector variant= 'outlined' color='primary' />
+                  <LocationDropDown />
                 </Grid>
               </Grid>
             </div>

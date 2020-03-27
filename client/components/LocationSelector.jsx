@@ -1,3 +1,5 @@
+// DO NOT USE THIS - USE 'LocationDropDown'
+
 import React from "react";
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
@@ -79,7 +81,7 @@ export default function LocationSelector() {
   return (
     <div>
       <FormControl className={classes.formControl}>
-        <InputLabel id="demo-mutiple-name-label">Location</InputLabel>
+        <InputLabel id="demo-mutiple-name-label">Select Stall</InputLabel>
         <Select
           labelId="demo-mutiple-name-label"
           id="demo-mutiple-name"
@@ -89,7 +91,7 @@ export default function LocationSelector() {
           input={<Input />}
           MenuProps={MenuProps}
         >
-          {names.map(name => (
+          {names.map(name => ( // map through 'names' variable to list locations
             <MenuItem
               key={name}
               value={name}
