@@ -20,7 +20,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Community Stall Share
+        What's on your local community stall?
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -80,11 +80,11 @@ export default function Home() {
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Community Stall Share
+            <Typography  variant="h3" align="center" color="textPrimary" gutterBottom>
+            What's on your local community stall?
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Copy about how this system works ie see what's available then go and collect or else drop off food and update.
+              View what's on a local stall and update the community when you give or take items.
             </Typography>
             
             <div className={classes.heroButtons}>

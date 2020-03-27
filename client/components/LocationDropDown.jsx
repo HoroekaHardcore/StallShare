@@ -3,7 +3,9 @@ import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 
-export default function SimpleMenu() {
+// TO DO NEXT - GET SELECTED LOCATION TO STAY ON PAGE
+
+export default function LocationDropDown() {
   const [anchorEl, setAnchorEl] = React.useState(null); // hook to handle state
 
   const handleClick = event => {
@@ -11,7 +13,8 @@ export default function SimpleMenu() {
   };
 
   const handleClose = () => {
-    setAnchorEl(null);
+    setAnchorEl();
+
   };
 
   const stallLocations = [
@@ -30,7 +33,8 @@ export default function SimpleMenu() {
         aria-haspopup="true"
         onClick={handleClick}
       >
-        Select Location
+        Select Location to View
+        
       </Button>
       <Menu
         id="simple-menu"
