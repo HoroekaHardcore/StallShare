@@ -13,7 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-import LocationSelector from './LocationSelector'
+import LocationDropDown from './LocationDropDown'
 
 function Copyright() {
   return (
@@ -86,16 +86,11 @@ export default function Home() {
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
               Copy about how this system works ie see what's available then go and collect or else drop off food and update.
             </Typography>
-            <Typography variant="h6" align="center" color="textSecondary" paragraph>
-              Just select the community food stalls you wish to view from the dropdown list and the latest information from those locations will be shown.
-            </Typography>
+            
             <div className={classes.heroButtons}>
               <Grid container spacing={1} justify="center">
                 <Grid item>
-                  {/* <Button variant="contained" color="primary">
-                    Main call to action
-                  </Button> */}
-                  <LocationSelector variant= 'outlined' color='primary' />
+                  <LocationDropDown />
                 </Grid>
               </Grid>
             </div>
