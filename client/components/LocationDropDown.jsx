@@ -7,7 +7,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 
 export default function LocationDropDown() {
   const [anchorEl, setAnchorEl] = useState(null); // hook to dropdown menu showing locations
-  const [location, setLocation] = useState("Where would you like to view?"); // hook to handle location on show below dropdown
+  const [location, setLocation] = useState("^"); // hook to handle location on show below dropdown
 
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
