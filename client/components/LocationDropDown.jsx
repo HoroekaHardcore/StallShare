@@ -7,7 +7,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 
 export default function LocationDropDown() {
   const [anchorEl, setAnchorEl] = useState(null); // hook to dropdown menu showing locations
-  const [location, setLocation] = useState(""); // hook to handle location on show below dropdown
+  const [location, setLocation] = useState("Where would you like to view?"); // hook to handle location on show below dropdown
 
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
@@ -27,13 +27,14 @@ export default function LocationDropDown() {
   ];
 
   return (
-    <div>
+    <div className='centre-page'>
       <Button
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
+        
       >
-        Select Location to View
+        Click here to select stall location
       </Button>
       <Menu
         id="simple-menu"
@@ -54,7 +55,7 @@ export default function LocationDropDown() {
           </MenuItem>
         ))}
       </Menu>
-      <h4>{location}</h4>
+      <h4 className='location-header'>{location}</h4>
     </div>
   );
 }

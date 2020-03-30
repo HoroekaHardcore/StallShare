@@ -1,12 +1,26 @@
 /* header */
 
 .MuiAppBar-colorPrimary {
-    color: #fff;
-    background-color: #72A276 !important;
+  color: #fff;
+  background-color: #72a276 !important;
+}
+
+/* Home Page */
+
+.centre-page {
+  text-align: center;
 }
 
 /* Dropdown Button */
 
-.dropdown-button {
-background-color: #72A276 !important;
+.dropdown-button-padding {
+  /* padding-bottom: 3rem;
+  margin-bottom: 3rem; */
+}
+
+.location-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(44, 43, 43);
+  margin: 0px;
 }
