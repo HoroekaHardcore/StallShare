@@ -81,10 +81,10 @@ export default function Home() {
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography  variant="h3" align="center" color="textPrimary" gutterBottom>
-            What's on your local community stall?
+            What's on your local stall?
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              View what's on a local stall and update the community when you give or take items.
+              Upload a photo when you give or take from a stall - keep the locals up-to-date!
             </Typography>
             
             <div className={classes.heroButtons}>
