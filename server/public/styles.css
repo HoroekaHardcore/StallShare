@@ -13,10 +13,13 @@
 
 /* Dropdown Button */
 
-.dropdown-button-padding {
-  /* padding-bottom: 3rem;
-  margin-bottom: 3rem; */
+.dropdown-selector-btn {
+    background-color: rgb(212, 212, 212) !important;
+    margin-bottom: 1rem !important;
+    padding: .5rem 1rem .5rem 1rem !important;
 }
+
+
 
 .location-header {
   font-size: 1.5rem;

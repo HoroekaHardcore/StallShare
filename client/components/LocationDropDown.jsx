@@ -32,7 +32,7 @@ export default function LocationDropDown() {
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
-        
+        className="dropdown-selector-btn"
       >
         Click here to select stall location
       </Button>
