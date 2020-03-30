@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -6,7 +6,8 @@ import MenuItem from "@material-ui/core/MenuItem";
 // TO DO NEXT - GET SELECTED LOCATION TO STAY ON PAGE
 
 export default function LocationDropDown() {
-  const [anchorEl, setAnchorEl] = React.useState(null); // hook to handle state
+  const [anchorEl, setAnchorEl] = useState(null); // hook to dropdown menu showing locations
+  const [location, setLocation] = useState("Where would you like to view?"); // hook to handle location on show below dropdown
 
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
@@ -14,7 +15,6 @@ export default function LocationDropDown() {
 
   const handleClose = () => {
     setAnchorEl();
-
   };
 
   const stallLocations = [
@@ -27,14 +27,14 @@ export default function LocationDropDown() {
   ];
 
   return (
-    <div>
+    <div className='centre-page'>
       <Button
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
+        className="dropdown-selector-btn"
       >
-        Select Location to View
-        
+        Click here to select stall location
       </Button>
       <Menu
         id="simple-menu"
@@ -44,10 +44,18 @@ export default function LocationDropDown() {
         onClose={handleClose}
       >
         {stallLocations.map(location => (
-          <MenuItem key={location}
-          value={location}onClick={handleClose}>{location}</MenuItem>
+          <MenuItem
+            key={location}
+            onClick={() => setLocation(location)}
+            location={location}
+            value={location}
+            onMouseUp={() => setAnchorEl()}
+          >
+            {location}
+          </MenuItem>
         ))}
       </Menu>
+      <h4 className='location-header'>{location}</h4>
     </div>
   );
 }
