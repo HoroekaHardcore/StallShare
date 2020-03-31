@@ -14,6 +14,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 import LocationDropDown from "./LocationDropDown";
+import LandingImage from './LandingImage';
 
 
 
@@ -70,10 +71,12 @@ export default function Home() {
 
   return (
     <React.Fragment>
+      <LandingImage />
       <CssBaseline />
-      <main img src="./landingImage.jpg">
+      <main >
         <div className={classes.heroContent} >
           <Container
+          i
           maxWidth="sm" 
           >
             <Typography
