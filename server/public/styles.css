@@ -9,8 +9,8 @@
 
 .centre-page {
   text-align: center;
-  margin-top: 8rem;
   margin-bottom: 2rem;
+  height: 300px;
 }
 
 .landing-image {
@@ -19,7 +19,7 @@
 }
 
 .landing-header {
-    padding-top: 5rem !important;
+    padding-top: 4rem !important;
     
 }
 
