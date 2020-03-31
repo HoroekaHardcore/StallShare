@@ -1,21 +1,24 @@
 import React from "react";
-import styled from "styled-components";
+
+import KitchenIcon from "@material-ui/icons/Kitchen";
+import Typography from "@material-ui/core/Typography";
+
+
 
 
 
 class Header extends React.Component {
     
   render() {
+    
     return (
       <React.Fragment>
-        <AppBar position="relative">
-          <Toolbar>
-            <KitchenIcon className={classes.icon} />
+        <div>
+            <KitchenIcon className="icon" />
             <Typography variant="h6" color="inherit" noWrap>
-              Community Stall Share
+              Stall Share
             </Typography>
-          </Toolbar>
-        </AppBar>
+            </div>
       </React.Fragment>
     );
   }

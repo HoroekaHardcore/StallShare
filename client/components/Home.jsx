@@ -1,7 +1,7 @@
 import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
-import KitchenIcon from "@material-ui/icons/Kitchen";
+import Paper from "@material-ui/core/Paper";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
@@ -14,10 +14,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 import LocationDropDown from "./LocationDropDown";
-import LandingImage from './LandingImage';
-
-
-
+import LandingImage from "./LandingImage";
 
 // function Copyright() {
 //   return (
@@ -33,13 +30,13 @@ import LandingImage from './LandingImage';
 // }
 
 const useStyles = makeStyles(theme => ({
-  icon: {
-    marginRight: theme.spacing(2)
-  },
-  heroContent: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(8, 0, 6)
-  },
+  // icon: {
+  //   marginRight: theme.spacing(2)
+  // },
+  // heroContent: {
+  //   backgroundColor: theme.palette.background.paper,
+  //   padding: theme.spacing(8, 0, 6)
+  // },
   heroButtons: {
     marginTop: theme.spacing(4)
   },
@@ -69,25 +66,33 @@ const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 export default function Home() {
   const classes = useStyles();
 
+  // const background = "./landingImage.jpg";
+  
+
   return (
     <React.Fragment>
-      <LandingImage />
+      {/* <Header /> */}
+      {/* <LandingImage /> */}
       <CssBaseline />
-      <main >
-        <div className={classes.heroContent} >
-          <Container
-          i
-          maxWidth="sm" 
+      <main>
+        <div 
+        // className={classes.heroContent}
+        >
+          <Paper
+            className="landing-image"
+            // style={{ backgroundImage: `url(${background})` }}
           >
-            <Typography
-              variant="h4"
-              align="center"
-              color="textPrimary"
-              gutterBottom
-            >
-              WHAT'S ON <strong>YOUR</strong> LOCAL STALL?
-            </Typography>
-
+            <Container maxWidth="md">
+              <Typography
+                variant="h3"
+                align="center"
+                color="textPrimary"
+                className="landing-header"
+                gutterBottom
+              >
+                WHAT'S ON <strong>YOUR</strong> LOCAL STALL?
+              </Typography>
+            </Container>
             <div className={classes.heroButtons}>
               <Grid container spacing={1} justify="center">
                 <Grid item>
@@ -95,10 +100,12 @@ export default function Home() {
                 </Grid>
               </Grid>
             </div>
-          </Container>
+          </Paper>
         </div>
+
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
+
           <Grid container spacing={4}>
             {cards.map(card => (
               <Grid item key={card} xs={12} sm={6} md={4}>
@@ -131,7 +138,6 @@ export default function Home() {
           </Grid>
         </Container>
       </main>
-     
     </React.Fragment>
   );
 }
