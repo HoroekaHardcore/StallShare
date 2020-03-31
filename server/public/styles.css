@@ -9,22 +9,27 @@
 
 .centre-page {
   text-align: center;
+  margin-bottom: 2rem;
+  height: 300px;
 }
 
 .landing-image {
-    width: 100%;
-    height: auto;
+  max-width: 100%;
+  background-image: url("./landingImage.jpg");
+}
+
+.landing-header {
+    padding-top: 4rem !important;
+    
 }
 
 /* Dropdown Button */
 
 .dropdown-selector-btn {
-    background-color: rgb(212, 212, 212) !important;
-    margin-bottom: 1rem !important;
-    padding: .5rem 1rem .5rem 1rem !important;
+  background-color: rgb(212, 212, 212) !important;
+  margin-bottom: 1rem !important;
+  padding: 0.5rem 1rem 0.5rem 1rem !important;
 }
-
-
 
 .location-header {
   font-size: 1.5rem;
