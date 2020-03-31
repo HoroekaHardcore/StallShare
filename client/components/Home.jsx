@@ -14,19 +14,23 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 import LocationDropDown from "./LocationDropDown";
+import LandingImage from './LandingImage';
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href="https://material-ui.com/">
-        What's on your local community stall?
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
+
+
+
+// function Copyright() {
+//   return (
+//     <Typography variant="body2" color="textSecondary" align="center">
+//       {"Copyright © "}
+//       <Link color="inherit" href="https://material-ui.com/">
+//         What's on your local community stall?
+//       </Link>{" "}
+//       {new Date().getFullYear()}
+//       {"."}
+//     </Typography>
+//   );
+// }
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -67,25 +71,21 @@ export default function Home() {
 
   return (
     <React.Fragment>
+      <LandingImage />
       <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
-          <KitchenIcon className={classes.icon} />
-          <Typography variant="h6" color="inherit" noWrap>
-            Community Stall Share
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      <main>
-        <div className={classes.heroContent}>
-          <Container maxWidth="sm">
+      <main >
+        <div className={classes.heroContent} >
+          <Container
+          i
+          maxWidth="sm" 
+          >
             <Typography
               variant="h4"
               align="center"
               color="textPrimary"
               gutterBottom
             >
-              What's on your local stall?
+              WHAT'S ON <strong>YOUR</strong> LOCAL STALL?
             </Typography>
 
             <div className={classes.heroButtons}>
@@ -131,22 +131,7 @@ export default function Home() {
           </Grid>
         </Container>
       </main>
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography
-          variant="subtitle1"
-          align="center"
-          color="textSecondary"
-          component="p"
-        >
-          Something here to give the footer a purpose!
-        </Typography>
-        <Copyright />
-      </footer>
-      {/* End footer */}
+     
     </React.Fragment>
   );
 }
