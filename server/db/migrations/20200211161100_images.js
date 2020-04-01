@@ -4,6 +4,7 @@ exports.up = (knex, Promise) => {
     table.integer('stall_id').references('stalls.id')
     table.datetime('posted_at', { precision: 6 })
     table.text('notes')
+    table.text('url')
   })
 }
 
