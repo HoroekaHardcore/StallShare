@@ -9,14 +9,14 @@ exports.seed = function(knex) {
       url: '/photos/1.jpg'
     },
     {
-      id: 1, 
+      id: 2, 
       stall_id: 2, 
       posted_at: '2020-02-30T18:30:19.278Z', 
       notes: 'Added homegrown tomatoes. I took a box of eggs.', 
       url: '/photos/2.jpg'
     },
     {
-      id: 1, 
+      id: 3, 
       stall_id: 3, 
       posted_at: '2020-03-30T11:00:19.278Z', 
       notes: 'I took a can of beans and a bundle of kale.', 
