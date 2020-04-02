@@ -14,7 +14,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 import LocationDropDown from "./LocationDropDown";
-import LandingImage from "./LandingImage";
+import UploadPhoto from "./UploadPhoto";
 
 // function Copyright() {
 //   return (
@@ -97,6 +97,7 @@ export default function Home() {
               <Grid container spacing={1} justify="center">
                 <Grid item>
                   <LocationDropDown />
+                  <UploadPhoto />
                 </Grid>
               </Grid>
             </div>
