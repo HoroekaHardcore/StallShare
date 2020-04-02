@@ -1,7 +1,7 @@
 import React, {useCallback} from 'react'
 import {useDropzone} from 'react-dropzone'
  
-function UploadPhoto() {
+export default function UploadPhoto() {
   const onDrop = useCallback(acceptedFiles => {
     // Do something with the files
   }, [])
