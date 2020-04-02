@@ -23,6 +23,10 @@
     
 }
 
+.container {
+  text-align: center;
+}
+
 /* Dropdown Button */
 
 .dropdown-selector-btn {
