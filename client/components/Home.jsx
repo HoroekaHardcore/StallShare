@@ -14,29 +14,12 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 import LocationDropDown from "./LocationDropDown";
-import LandingImage from "./LandingImage";
+import UploadPhoto from "./UploadPhoto";
 
-// function Copyright() {
-//   return (
-//     <Typography variant="body2" color="textSecondary" align="center">
-//       {"Copyright © "}
-//       <Link color="inherit" href="https://material-ui.com/">
-//         What's on your local community stall?
-//       </Link>{" "}
-//       {new Date().getFullYear()}
-//       {"."}
-//     </Typography>
-//   );
-// }
+
 
 const useStyles = makeStyles(theme => ({
-  // icon: {
-  //   marginRight: theme.spacing(2)
-  // },
-  // heroContent: {
-  //   backgroundColor: theme.palette.background.paper,
-  //   padding: theme.spacing(8, 0, 6)
-  // },
+ 
   heroButtons: {
     marginTop: theme.spacing(4)
   },
@@ -97,6 +80,7 @@ export default function Home() {
               <Grid container spacing={1} justify="center">
                 <Grid item>
                   <LocationDropDown />
+                  <UploadPhoto />
                 </Grid>
               </Grid>
             </div>
