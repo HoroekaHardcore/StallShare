@@ -1,23 +1,27 @@
 import React from "react";
-import styled from "styled-components";
 
-const Header = styled.div`
-  width: 100%;
-  border: ${props => `1px solid ${props.theme.colors.onyx}`};
-  background-color: ${props => props.theme.colors.lightBlue};
-  font-family: ${props => props.theme.fonts[0]};
-`;
+import KitchenIcon from "@material-ui/icons/Kitchen";
+import Typography from "@material-ui/core/Typography";
+
+
+
+
 
 class Header extends React.Component {
-
-    render() {
-        return (
-            <React.Fragment>
-                
-
-            </React.Fragment>
-        )
-    }
+    
+  render() {
+    
+    return (
+      <React.Fragment>
+        <div>
+            <KitchenIcon className="icon" />
+            <Typography variant="h6" color="inherit" noWrap>
+              Stall Share
+            </Typography>
+            </div>
+      </React.Fragment>
+    );
+  }
 }
 
-export default Header
+export default Header;

@@ -1,0 +1,43 @@
+/* header */
+
+.MuiAppBar-colorPrimary {
+  color: #fff;
+  background-color: #72a276 !important;
+}
+
+/* Home Page */
+
+.centre-page {
+  text-align: center;
+  margin-bottom: 2rem;
+  height: 300px;
+}
+
+.landing-image {
+  max-width: 100%;
+  background-image: url("./landingImage.jpg");
+}
+
+.landing-header {
+    padding-top: 4rem !important;
+    
+}
+
+.container {
+  text-align: center;
+}
+
+/* Dropdown Button */
+
+.dropdown-selector-btn {
+  background-color: rgb(212, 212, 212) !important;
+  margin-bottom: 1rem !important;
+  padding: 0.5rem 1rem 0.5rem 1rem !important;
+}
+
+.location-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(44, 43, 43);
+  margin: 0px;
+}
